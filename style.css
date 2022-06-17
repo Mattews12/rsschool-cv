@@ -1,47 +1,145 @@
-body {
-    font-family: 'Joan', serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
-.header {
-    border: 2px solid black;
+/*  границы и внутренние отступы учитываются при расчёте */
+
+/*? --------------- ----------------------------------------------------------------------*/
+.nav a {
+    color: black;
+    transition: color 0.3s;
+
 }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
+.nav-item a:hover {
+    color: #575450;
 }
+
+/* добавление интерактивности (изменение цвета "a" при наведении)*/
 
 html {
     scroll-behavior: smooth;
 }
 
+/* плаваная прокрутка */
+/*? --------------- ----------------------------------------------------------------------*/
+
+body {
+    font-family: 'Joan', serif;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: large;
+    background-color: #f0eaea;
+    max-width: 900px;
+}
+
+/* mh:100vh - min high body не можеть быть меньше высоты страницы */
+/* jc: space between - элементы размещаются max distance друг от друга, крайние прижаты к границам родителя */
+/* fd:column - определение оси по вертикали(стлобцы) */
+
+
+/* !!!!!!!!!!!!!!!Header!!!!!!!!!!!!!!! */
+.header {
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    border: 5px ridge black;
+
+}
+
 .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
+/* d:flex - элементы навигации распологаем в строку */
+/* jc:flex-end - сдвигаем влево */
+/* ai:center - выравниваем по центру по высоте */
+/* lf:none - удаляем стандартные маркеры */
+
 .nav-link {
-    padding: 0 20px;
+    padding: 25px;
     line-height: 50px;
+    /* добавляем отступы ссылкам | padding действует только горизонтально(a - string) */
     color: black;
     text-decoration: none;
     font-weight: bold;
     transition: .3s;
 }
 
-.section-item a {
-    color: burlywood;
-    text-decoration: none;
-    transition: color 0.5s;
+/*t:.3s - плавное изменение свойств */
+
+
+
+/* !!!!!!!!!!!!!!!Main!!!!!!!!!!!!!!! */
+.main {
+    font-size: 20px;
+    justify-content: space-between;
+
 }
 
-.section-item a:hover {
-    color: gray;
+
+.section {
+    margin: auto;
+    padding: 2%;
+}
+
+.myphoto {
+    max-width: 200px;
+    max-height: 220px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10%;
+
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.telegram {
+    color: #000000;
+    text-decoration: none;
+    transition: .3s;
+    font-style: italic;
+    border-radius: 5px;
+
+
+
+}
+
+
+/*!!!!!!!!!!!!!!!Footer!!!!!!!!!!!!!!! */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.rsschool {
+    display: flex;
+    max-width: 150px;
+    min-height: 100px;
+}
+
+.year {
+    margin: auto;
+}
+
+.mygithub {
+    display: flex;
+    max-width: 150px;
+    min-height: 100px;
 }
