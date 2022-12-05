@@ -11,3 +11,31 @@ My city is Grodno, I really love what i do! Otherwise what is meaning of spening
 ## Contacts
  + Discord: Motian#8799
  + Telegram: https://t.me/FuflQ
+
+
+## Skills 
+ + HTML5
+ + CSS3 
+ + JavaScript
+ + GIT
+ + Figma
+ + Visual Studio Code
+
+ 
+## Code 
+ ```
+  let i = 0;
+  
+  while(i < 10) {
+    i++;
+    console.log(i);
+  }
+
+ ```
+
+## Education 
+ + Yanka Kupala State University of Grodno
+ + Rolling Scopes School
+
+## English
+ + A2
