@@ -1,145 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+/* CSS RESET */
 
-* {
-    box-sizing: border-box;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-/*  границы и внутренние отступы учитываются при расчёте */
-
-/*? --------------- ----------------------------------------------------------------------*/
-.nav a {
-    color: black;
-    transition: color 0.3s;
-
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-.nav-item a:hover {
-    color: #575450;
+body {
+	line-height: 1;
 }
-
-/* добавление интерактивности (изменение цвета "a" при наведении)*/
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+/* CSS RESET */
 
-/* плаваная прокрутка */
-/*? --------------- ----------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;800&display=swap');
 
 body {
-    font-family: 'Joan', serif;
-    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    background-color: #F0D7DE;
+    padding: 50px 0px;
+  
+}
+
+.container {
+  
+    width: 900px;
+    height: 1200px;
     margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: large;
-    background-color: #f0eaea;
-    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 10px black;
 }
 
-/* mh:100vh - min high body не можеть быть меньше высоты страницы */
-/* jc: space between - элементы размещаются max distance друг от друга, крайние прижаты к границам родителя */
-/* fd:column - определение оси по вертикали(стлобцы) */
-
-
-/* !!!!!!!!!!!!!!!Header!!!!!!!!!!!!!!! */
-.header {
-    border: 3px solid black;
+.wrapper-header {
+    background: black;
     display: flex;
-    justify-content: center;
-    border: 5px ridge black;
-
+    justify-content: space-evenly;
+    align-items: center;   
 }
 
-.nav-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-
-/* d:flex - элементы навигации распологаем в строку */
-/* jc:flex-end - сдвигаем влево */
-/* ai:center - выравниваем по центру по высоте */
-/* lf:none - удаляем стандартные маркеры */
-
-.nav-link {
-    padding: 25px;
+.name {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 40px;
     line-height: 50px;
-    /* добавляем отступы ссылкам | padding действует только горизонтально(a - string) */
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    transition: .3s;
+    
+}
+.photo img{
+  height: 200px;
+  border: 1px black solid;
+  border-radius: 20%;
+  margin: 10px 0px;
+    
 }
 
-/*t:.3s - плавное изменение свойств */
-
-
-
-/* !!!!!!!!!!!!!!!Main!!!!!!!!!!!!!!! */
-.main {
-    font-size: 20px;
-    justify-content: space-between;
-
-}
-
-
-.section {
-    margin: auto;
-    padding: 2%;
-}
-
-.myphoto {
-    max-width: 200px;
-    max-height: 220px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10%;
-
-}
-
-img {
-    height: 100%;
-    width: 100%;
-}
-
-.telegram {
-    color: #000000;
-    text-decoration: none;
-    transition: .3s;
-    font-style: italic;
-    border-radius: 5px;
-
-
-
-}
-
-
-/*!!!!!!!!!!!!!!!Footer!!!!!!!!!!!!!!! */
-
-.footer {
-    display: flex;
-    justify-content: space-around;
+.navigation {
     font-size: 25px;
-    font-weight: bold;
-
+    line-height: 30px;
+    
+}
+.navigation ul li a{
+    color: #ffffff;
+    
+}
+.navigation ul li a:hover {
+    color: #F0D7DE;
+    box-shadow: black ;
+    text-decoration: underline;
+   
 }
 
-.rsschool {
+
+
+.wrapper-main {
+
+    font-size: 18px;
+    line-height: 140%;
+    padding: 0 10px;
+}
+
+section {
+    margin: 10px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.wrapper-footer {
     display: flex;
-    max-width: 150px;
-    min-height: 100px;
-}
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 0px 10px;
+
+} 
 
 .year {
-    margin: auto;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 160%;
+
+
+}
+.rs-course {
 }
 
-.mygithub {
-    display: flex;
-    max-width: 150px;
-    min-height: 100px;
-}
+                     
+
+

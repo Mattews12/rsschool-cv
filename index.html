@@ -1,70 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
-
 <body>
-    <header class="header">
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#aboutme" class="nav-link">About me</a></li>
-                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <div class="container">
-            <section class="section" id="aboutme">
-                <h1>Matsvei Anufryieu</h1>
-                <img class="myphoto" src="assets/img/myphoto.jpg" alt="photo">
-                <p><b>Country</b> - Belarus</p>
-                <p><b>City</b> - Grodno</p>
-                <p>I am 19 years old, I want to become a programmer.</p>
-            </section>
-            <section class="section" id="contacts">
-                <h2>
-                    Contacts
-                </h2>
-                <ul class="nav-item">
-                    <li><a class="telegram" href="https://t.me/FuflQ"><b>Telegram</b></a></li>
-                    <li><b>Discord:</b> Motian#8799</li>
-                </ul>
-            </section>
-            <section class="section" id="skills">
-                <h2 class="sectiontitle">Skills</h2>
-                <p>HTML + CSS</p>
-            </section>
-            <section class="section" id="education">
-                <h2>Education</h2>
-                <p>Yanka Kupala State University of Grodno</p>
-                <p>"Practical psychology"</p>
-            </section>
-            <section class="section" id="english">
-                <h2>English</h2>
-                <p>B1</p>
-            </section>
-        </div>
-
-    </main>
-    <footer class="footer">
-        <div class="rsschool">
-            <a href="https://rs.school/" target="_blank"><img src="assets/svg/rs_school.svg" alt="Rolling Scopes School"></a>
-        </div>
-        <div class="year">2022</div>
-        <div class="mygithub">
-            <a href="https://github.com/Mattews12" target="_blank"><img src="assets/svg/git_hub.svg" alt="Git Hub"></a>
-        </div>
-    </footer>
-
+   <div class="container">
+        <header>
+           <div class="wrapper-header">
+                <div class="name">
+                    <h1>Matsvei <br> Anufryieu</h1>
+                </div>
+                <div class="photo">
+                    <img src="img/mypht.jpg" alt="My photo">
+                </div>
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                             <li><a href="#about">About me</a></li>
+                             <li><a href="#contacts">Contacts</a></li>
+                             <li><a href="#skills">Skills</a></li>
+                             <li><a href="#code">Code</a></li>
+                             <li><a href="#projects">Projects</a></li>
+                             <li><a href="#education">Education</a></li>
+                        </ul>
+                    </nav>
+                </div>
+           </div>
+        </header>
+        <main>
+            <div class="wrapper-main">
+                <section class="aboutme">
+                    <h2 id="aboutme">About me</h2>
+                    <p><b>Beginning Frontend developer and psychology student</b></p>
+                    <p>My city is Grodno, I really love what i do! Otherwise what is meaning of spening time.</p>
+                </section>
+                <section class="contacts">
+                    <h2 id="contacts">Contacts</h2>
+                    <ul>
+                        <li>Country: Belarus</li>
+                        <li><a href="https://t.me/FuflQ">Telegram</a></li>
+                        <li>Mail: amattews12@gmail.com</li>
+                        <li>Discord: Motian#8799</li>
+                    </ul>
+                </section>
+                <section class="skills">
+                    <h2 id="skills">Skills</h2>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>GIT</li>
+                        <li>Figma</li>
+                    </ul>
+                </section>
+                <section class="code">
+                    <h2 id="code">Code</h2>
+                    <pre class ="pre">
+                        <code>
+        let i = 0;
+        while(i &lt; 10) {
+        i++;
+        console.log(i);
+                    }                          
+                 </code>
+                    </pre>
+                </section>
+                <section class="projects">
+                    <h2 id="projects">Projects</h2>
+                    <ul>
+                        <li><a href="https://mattews12.github.io/rsschool-cv/">CV</a></li>
+                    </ul>
+                </section>
+                <section class="education">
+                    <h2 id="education">Education</h2>
+                        <ul>
+                            <li>Yanka Kupala State University of Grodno</li>
+                            <li>Rolling Scopes School</li>
+                            <li>English[Elementary]</li>
+                            <li>Polish[Biginner]</li>
+                        </ul>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="wrapper-footer">
+                <div class="github"><a href="https://github.com/Mattews12?tab=repositories"><img src="https://zhannage.github.io/rsschool-cv/img/GitHub-Mark-64px.png" alt="GitHub"></a></div>
+                <div class="year">2022</div>
+                <div class="rs-course"><a href="https://rs.school/js-stage0/"><img src="https://rollingscopes.com/images/logo_rs_text.svg" alt="Rolling-scopes"></a></div>
+            </div>
+        </footer>
+   </div>
 </body>
-
 </html>
+
