@@ -1,51 +1,131 @@
 /* CSS RESET */
 
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 html {
@@ -53,105 +133,94 @@ html {
 }
 /* CSS RESET */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;800&display=swap");
 
 body {
-    font-family: 'Raleway', sans-serif;
-    background-color:  #c7a1ac63;
-    padding: 50px 0px;
-    /* background-color: #F0D7DE; */
+  font-family: "Raleway", sans-serif;
+  background-color: #c7a1ac63;
+  padding: 50px 0px;
+  /* background-color: #F0D7DE; */
 }
 
 .container {
-    width: 900px;
-    height: 1250px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    box-shadow: 10px 10px 10px black;
+  width: 900px;
+  height: 1250px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 10px black;
 }
 
 .wrapper-header {
-    background: black;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;   
+  background: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .name {
-    color: #ffffff;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 50px;
-    
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
 }
-.photo img{
+.photo img {
   height: 200px;
   border: 1px black solid;
   border-radius: 20%;
   margin: 10px 0px;
-    
 }
 
 .navigation {
-    font-size: 25px;
-    line-height: 30px;
-    
+  font-size: 25px;
+  line-height: 30px;
 }
-.navigation ul li a{
-    color: #ffffff;
-    
+.navigation ul li a {
+  color: #ffffff;
 }
 .navigation ul li a:hover {
-    color: #F0D7DE;
-    box-shadow: black ;
-    text-decoration: underline;
-   
+  color: #f0d7de;
+  box-shadow: black;
+  text-decoration: underline;
 }
 
-
-
 .wrapper-main {
-
-    font-size: 18px;
-    line-height: 140%;
-    padding: 0 10px;
+  font-size: 18px;
+  line-height: 140%;
+  padding: 0 10px;
 }
 
 section {
-    margin: 10px;
+  margin: 10px;
 }
 
 h2 {
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 160%;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 160%;
 }
 
 .wrapper-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    margin: 10px 10px;
-
-} 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 10px 10px;
+}
 
 .year {
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 160%;
-
-
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 160%;
 }
 .rs-course {
 }
 
 .rs-course-svg {
-    width: 150px;
-    height: 100px;
+  width: 150px;
+  height: 100px;
 }
 
 .github-png {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
